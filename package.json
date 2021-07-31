@@ -19,6 +19,7 @@
     "vue": "^3.0.5"
   },
   "devDependencies": {
+    "@kamona/tailwindcss-perspective": "^0.1.1",
     "@vitejs/plugin-vue": "^1.2.5",
     "@vitejs/plugin-vue-jsx": "^1.1.6",
     "@vue/compiler-sfc": "^3.0.5",
