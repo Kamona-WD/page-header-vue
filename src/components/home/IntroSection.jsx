@@ -82,40 +82,36 @@ export default defineComponent({
     })
 
     return () => (
-      <section class="relative min-h-screen intro">
-        <div class="relative px-6 pb-24 md:pt-28 mx-auto max-w-7xl">
-          <div>
-            <div style="perspective: 100vw" class="grid gap-5 grid-rows-2 grid-cols-3 md:grid-cols-4 md:grid-rows-1">
-              <div class="flex items-center justify-center">
-                <div
-                  id="accountScreenImage"
-                  class="w-full h-full flex items-center justify-center"
-                  style="transform: rotateX(25deg) rotateY(25deg) rotateZ(-15deg)"
-                >
-                  <AccountScreenSVGComponent class="h-auto w-[70%] drop-shadow-2xl" />
-                </div>
+      <section class="min-h-screen intro">
+        <div class="px-6 pb-24 md:pt-28 mx-auto max-w-7xl">
+          <div class="grid gap-5 grid-rows-2 grid-cols-3 perspective-100vw md:grid-cols-4 md:grid-rows-1">
+            <div class="flex items-center justify-center transform-style-3d">
+              <div
+                id="accountScreenImage"
+                class="w-full h-full flex items-center justify-center rotate-x-25 rotate-y-25 -rotate-z-15"
+              >
+                <AccountScreenSVGComponent class="h-auto w-[70%] drop-shadow-2xl" />
               </div>
-              {/*  */}
-              <div class="-mt-5 pb-2 flex flex-col items-center space-y-6 md:pt-20 md:space-y-10 md:pb-18 col-span-3 row-start-2 md:row-start-1 md:col-span-2 md:col-start-2">
-                <h2 class="text-[calc(.5vw+24px)] font-extrabold leading-snug text-center text-transparent bg-gradient-to-tr from-pink-500 to-indigo-600 via-blue-600-300 bg-clip-text">
-                  Make Your Business <br />
-                  More Powerfull
-                </h2>
-                <p class="max-w-xl text-[calc(.5vw+12px)] font-medium text-center text-gray-600 dark:text-gray-400">
-                  Creative way to manage your all digital Businesses from one app.
-                </p>
+            </div>
+            {/*  */}
+            <div class="-mt-5 pb-2 flex flex-col items-center space-y-6 pt-10 md:pt-20 md:space-y-10 md:pb-18 col-span-3 row-start-2 md:row-start-1 md:col-span-2 md:col-start-2">
+              <h2 class="text-[calc(.5vw+24px)] font-extrabold leading-snug text-center text-transparent bg-gradient-to-tr from-pink-500 to-indigo-600 via-blue-600-300 bg-clip-text">
+                Make Your Business <br />
+                More Powerfull
+              </h2>
+              <p class="max-w-xl text-[calc(.5vw+12px)] font-medium text-center text-gray-600 dark:text-gray-400">
+                Creative way to manage your all digital Businesses from one app.
+              </p>
 
-                <CTAButtons />
-              </div>
-              {/*  */}
-              <div class="col-start-3 flex items-center justify-center md:col-start-auto">
-                <div
-                  id="reportScreenImage"
-                  class="w-full h-full flex items-center justify-center"
-                  style="transform: rotateX(25deg) rotateY(-25deg) rotateZ(15deg)"
-                >
-                  <ReportScreenSVGComponent class="h-auto w-[70%] drop-shadow-2xl" />
-                </div>
+              <CTAButtons />
+            </div>
+            {/*  */}
+            <div class="col-start-3 flex items-center justify-center transform-style-3d md:col-start-auto">
+              <div
+                id="reportScreenImage"
+                class="w-full h-full flex items-center justify-center rotate-x-25 -rotate-y-25 rotate-z-15"
+              >
+                <ReportScreenSVGComponent class="h-auto w-[70%] drop-shadow-2xl" />
               </div>
             </div>
           </div>
